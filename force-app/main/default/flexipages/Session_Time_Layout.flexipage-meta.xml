@@ -23,6 +23,7 @@
                     <value>Case._LightningUpdateCase</value>
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
+                <identifier>xxxId</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>
@@ -63,11 +64,13 @@
                     <value>3</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
+                <identifier>yyyId</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>force:detailPanel</componentName>
+                <identifier>zzzId</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
