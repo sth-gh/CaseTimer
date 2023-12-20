@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -128,22 +128,16 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Session_Time_Layout</content>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Session_Time_Layout</content>
         <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -160,6 +154,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
+    <gender>Masculine</gender>
     <label>Session Time</label>
     <nameField>
         <label>Session Time Name</label>
@@ -167,14 +162,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Session Times</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Agent__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields xsi:nil="true"></searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Case_Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Duration__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Manual_Entry__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
