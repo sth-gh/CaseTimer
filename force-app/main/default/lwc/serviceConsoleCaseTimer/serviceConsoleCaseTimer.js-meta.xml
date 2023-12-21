@@ -2,4 +2,23 @@
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="ServiceConsoleCaseTimer">
     <apiVersion>54.0</apiVersion>
     <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="cmpHeader" label="Component Header" type="String" default="Session Timer" />
+            <property name="hideCmp" label="Hide entire Component?" type="Boolean" default="false" />
+            <property name="hideClock" label="Hide just Component Clock?" type="Boolean" default="false" />
+            <property name="hideList" label="Hide just Session Time List?" type="Boolean" default="false" />
+            <property name="bufferInSeconds" type="Integer" default="5" label="Buffer (in seconds)" description="Only record time against this record if the time is longer than this buffer. Note - it will still write time less than this if you update the Case status." />
+            <property name="allowManual" label="Allow Manual Logging?" type="Boolean" default="false" />
+            <property name="autoStart" label="Start timer automatically?" type="Boolean" default="true" description="When checked, the timer will automatically start when the page is loaded."/>
+            <property name="stopWhenCaseClosed" label="Don't log time whan case is closed" type="Boolean" default="false" />
+            <property name="pauseOnLostFocus" label="Pause when browser loses focus" type="Boolean" default="true" />
+            <objects>
+                <object>Case</object>
+            </objects>
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>
