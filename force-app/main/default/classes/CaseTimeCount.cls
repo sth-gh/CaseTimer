@@ -3,9 +3,9 @@ global with sharing class CaseTimeCount {
     // TO RESOLVE - Comment out 'LWCCaseTimer__' line and replace with the empty string version.
     // 
     // Required for Managed packages to have a Namespace for custom fields/objects
-    static String namespace = 'LWCCaseTimer__';
+    //static String namespace = 'LWCCaseTimer__';
     // Version for an unmanaged package install - uncomment this line below for the un-managed version to work.
-    //static String namespace = '';
+    static String namespace = '';
 
     @AuraEnabled
     // Checks all the required pre-config has been completed. 
